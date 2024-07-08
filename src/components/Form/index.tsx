@@ -43,7 +43,7 @@ const CustomFrom = ({
         {/* başlık-etiket inputu */}
         <Row>
           <Col>
-            <Form.Group>
+            <Form.Group controlId="title">
               <Form.Label>Başlık</Form.Label>
               <Form.Control defaultValue={title} ref={inputRef} />
             </Form.Group>
@@ -72,7 +72,7 @@ const CustomFrom = ({
           </Col>
         </Row>
         {/* içerik alanı */}
-        <Form.Group className="mt-4">
+        <Form.Group controlId="markdown" className="mt-4">
           <Form.Label>İçerik (markdown destekler)</Form.Label>
           <Form.Control
           defaultValue={markdown}
